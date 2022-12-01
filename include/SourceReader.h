@@ -4,9 +4,7 @@
 #include <fstream>
 
 class SourceReader {
-public:
-
-  SourceReader();
+ public:
 
   SourceReader(std::string file);
 

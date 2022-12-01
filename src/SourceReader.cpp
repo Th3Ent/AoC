@@ -1,7 +1,6 @@
 #include <SourceReader.h>
 
 
-
 SourceReader::SourceReader(std::string file){
   std::string line;
   std::ifstream myfile (file);
@@ -28,8 +27,7 @@ int SourceReader::get_size(){
     return myvector.size();
 }
 
-std::vector<std::string>& SourceReader::getVector()
-{
+std::vector<std::string>& SourceReader::getVector(){
   return myvector;
 }
 

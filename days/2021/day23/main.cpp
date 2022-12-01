@@ -1,5 +1,5 @@
 #include <string>
-#include <SourceReader.cpp>
+#include <SourceReader.h>
 
 
 class DayOfTodayAoC{
@@ -7,15 +7,13 @@ class DayOfTodayAoC{
 
    SourceReader* src;
 
-  DayOfTodayAoC(string file) {
+  DayOfTodayAoC(std::string file) {
 
     src = new SourceReader(file);
 
   }
 
   int computeFirstStar() {
-
-
 
     std::cout << "Primera estrella" << std::endl;
     return 0;
@@ -35,7 +33,7 @@ class DayOfTodayAoC{
 
 int main() {
 
-  string inputFile = "input.txt";
+  std::string inputFile = "input.txt";
   DayOfTodayAoC execute(inputFile);
 
   execute.computeFirstStar();
