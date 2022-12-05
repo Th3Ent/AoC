@@ -1,6 +1,8 @@
 #include <string>
+#include <algorithm>
 #include <SourceReader.h>
 
+const std::string path = "../../../days/2022/";
 
 class DayOfTodayAoC{
  public:
@@ -9,22 +11,30 @@ class DayOfTodayAoC{
 
   DayOfTodayAoC(std::string file) {
 
-    src = new SourceReader(file);
+    src = new SourceReader(path + file);
+    std::for_each(src->getVector().begin(), src->getVector().end(), [&](std::string line) {
 
+    });
   }
 
   int computeFirstStar() {
 
-    std::cout << "Primera estrella" << std::endl;
+    unsigned int total = 0;
+
+
+
+    std::cout << "Primera estrella "<< total << std::endl;
     return 0;
   }
 
 
   int computeSecondStar() {
 
+    unsigned int total = 0;
 
 
-    std::cout << "Segunda estrella" << std::endl;
+
+    std::cout << "Segunda estrella "<<total << std::endl;
     return 0;
   }
 
@@ -33,12 +43,21 @@ class DayOfTodayAoC{
 
 int main() {
 
-  std::string inputFile = "input.txt";
-  DayOfTodayAoC execute(inputFile);
+  std::string inputFile = "day05/input.txt";
+  std::string testInputFile = "day05/test.txt";
 
-  execute.computeFirstStar();
 
-  execute.computeSecondStar();
+  std::cout << "Test" << std::endl;
+  DayOfTodayAoC executeTest(testInputFile);
+  executeTest.computeFirstStar();
+  executeTest.computeSecondStar();
+
+  std::cout << std::endl<< std::endl<< "Input" << std::endl;
+  DayOfTodayAoC executeInput(inputFile);
+  executeInput.computeFirstStar();
+  executeInput.computeSecondStar();
+
+
 
   std::cin;
 

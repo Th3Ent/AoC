@@ -4,6 +4,11 @@
 --Solution important settings
 
 newoption {
+   trigger = "2020",
+   description = "Opens 2020 solution"
+}
+
+newoption {
    trigger = "2021",
    description = "Opens 2021 solution"
 }
@@ -138,3 +143,57 @@ if _OPTIONS["2021"] then
             
       end
     end
+
+
+    if _OPTIONS["2020"] then
+
+      workspace(workspace_name .. "2020")
+      cppdialect "C++11"
+      startproject (project_name[1])
+      configurations ({ "Debug", "Release" })
+      location (projects_location .. "/2020")
+      platforms {"x64"}
+
+      includedirs {"./include/",
+                  "./src/" 
+                  }
+      files{"./src/*.cpp",
+      "./include/*.h"}
+
+      defines {
+         "_CRT_SECURE_NO_WARNINGS"
+      }
+
+      for _,i in ipairs(project_name) do
+
+         project (i)
+   
+            location (projects_location .. "/2020" .. "/" .. i)
+            kind ("ConsoleApp")
+            language (languague)
+            targetdir "bin/%{cfg.buildcfg}"
+   
+            files {("./days/2020/" .. i .. "/**.cpp"), "./days/2020/" .. i .. "/**.txt"}
+            links {(static_lib_project)}
+   
+            filter "configurations:Debug"
+               targetdir "bin/%{cfg.buildcfg}"
+               defines { "DEBUG","MTR_ENABLED" }
+               symbols "On"
+               flags {
+                  "NoPCH",
+               }
+   
+   
+            filter "configurations:Release"
+               targetdir "bin/"
+               defines { "NDEBUG" }
+               optimize "On"
+               
+               flags {
+                  "NoPCH",
+               }
+            
+      end
+    end
+
