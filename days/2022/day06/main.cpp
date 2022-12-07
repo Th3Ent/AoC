@@ -51,7 +51,7 @@ class DayOfTodayAoC{
 
   int computeFirstStar() {
 
-    std::cout << "Primera estrella "<< findMarker(dataStream,4) << std::endl;
+    std::cout << "First Star "<< findMarker(dataStream,4) << std::endl;
     return 0;
 
   }
@@ -59,7 +59,7 @@ class DayOfTodayAoC{
 
   int computeSecondStar() {
 
-    std::cout << "Segunda estrella "<< findMarker(dataStream, 14) << std::endl;
+    std::cout << "Second Star "<< findMarker(dataStream, 14) << std::endl;
     return 0;
 
   }

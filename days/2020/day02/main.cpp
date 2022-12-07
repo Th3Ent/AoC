@@ -76,7 +76,7 @@ class DayOfTodayAoC{
 
     });
 
-    std::cout << "Primera estrella "<< validPasswords << std::endl;
+    std::cout << "First Star "<< validPasswords << std::endl;
     return 0;
   }
 
@@ -93,7 +93,7 @@ class DayOfTodayAoC{
 
       });
 
-    std::cout << "Segunda estrella "<<validPasswords << std::endl;
+    std::cout << "Second Star "<<validPasswords << std::endl;
     return 0;
   }
 

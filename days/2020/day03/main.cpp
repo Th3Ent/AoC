@@ -41,7 +41,7 @@ class DayOfTodayAoC{
 
     unsigned int tree = checkSlope(1,3);
 
-    std::cout << "Primera estrella "<<tree << std::endl;
+    std::cout << "First Star "<<tree << std::endl;
     return 0;
   }
 
@@ -56,7 +56,7 @@ class DayOfTodayAoC{
 
     unsigned long long result = tree11 * tree13 * tree15 * tree17 * tree21;
 
-    std::cout << "Segunda estrella "<< result << std::endl;
+    std::cout << "Second Star "<< result << std::endl;
     return 0;
   }
 

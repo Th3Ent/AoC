@@ -132,7 +132,7 @@ class DayOfTodayAoC{
     std::map<std::string, bool> smallCavesVisited;
     total = PosiblePaths(&mapCave.find("start")->second, smallCavesVisited);
 
-    std::cout << "Primera estrella "<<total << std::endl;
+    std::cout << "First star "<<total << std::endl;
 
 
 
@@ -148,7 +148,7 @@ class DayOfTodayAoC{
     total = PosiblePathsSecond(&mapCave.find("start")->second, smallCavesVisited, false, cavesString);
 
 
-    std::cout << "Segunda estrella "<<total << std::endl;
+    std::cout << "Second star "<<total << std::endl;
     return 0;
   }
 

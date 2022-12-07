@@ -254,7 +254,7 @@ public:
 
     Node finalNode = aStar(closeList);
 
-    std::cout << "Primera estrella " << finalNode.g << std::endl;
+    std::cout << "First star " << finalNode.g << std::endl;
     return 0;
   }
 
@@ -282,7 +282,7 @@ public:
     //
     //}
 
-    std::cout << "Segunda estrella " << finalNode.g << std::endl;
+    std::cout << "Second star " << finalNode.g << std::endl;
     return 0;
   }
 

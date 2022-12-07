@@ -28,7 +28,7 @@ class DayOfTodayAoC{
 
   int computeFirstStar() {
 
-    std::cout << "Primera estrella" << std::endl;
+    std::cout << "First Star" << std::endl;
 
     unsigned int max = 0;
     unsigned int counter = 0;
@@ -57,7 +57,7 @@ class DayOfTodayAoC{
 
   int computeSecondStar() {
 
-    std::cout << "Segunda estrella" << std::endl;
+    std::cout << "Second Star" << std::endl;
 
     std::vector<int> totalCalories;
 

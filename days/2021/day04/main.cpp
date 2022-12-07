@@ -178,7 +178,7 @@ class DayOfTodayAoC{
 
 
 
-    std::cout << "Primera estrella" << std::endl;
+    std::cout << "First star" << std::endl;
     return 0;
   }
 
@@ -292,7 +292,7 @@ class DayOfTodayAoC{
 
 
 
-    std::cout << "Segunda estrella" << std::endl;
+    std::cout << "Second star" << std::endl;
     return 0;
   }
 

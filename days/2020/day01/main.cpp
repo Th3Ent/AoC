@@ -26,7 +26,7 @@ class DayOfTodayAoC{
     for (int i = 0; i < data.size(); i++) {
       for (int j = 0; j < data.size(); j++) {
         if (data[i] + data[j] == 2020) {
-          std::cout << "Primera estrella "<<data[i]*data[j] << std::endl;
+          std::cout << "First Star "<<data[i]*data[j] << std::endl;
           return 0;
         }
       }
@@ -44,7 +44,7 @@ class DayOfTodayAoC{
       for (int j = 0; j < data.size(); j++) {
         for (int k = 0; k < data.size(); k++) {
           if (data[i] + data[j] + data[k] == 2020) {
-            std::cout << "Segunda estrella " << data[i] * data[j] * data[k] << std::endl;
+            std::cout << "Second Star " << data[i] * data[j] * data[k] << std::endl;
             return 0;
           }
         }

@@ -125,7 +125,7 @@ class DayOfTodayAoC{
 
     }
 
-    std::cout << "Primera estrella  " <<countMoreThaTwice<< std::endl;
+    std::cout << "First star  " <<countMoreThaTwice<< std::endl;
     return 0;
   }
 
@@ -233,7 +233,7 @@ class DayOfTodayAoC{
 
     }
 
-    std::cout << "Segunda estrella  " << countMoreThaTwice << std::endl;
+    std::cout << "Second star  " << countMoreThaTwice << std::endl;
     return 0;
   }
 

@@ -118,7 +118,7 @@ class DayOfTodayAoC{
     });
 
 
-    std::cout << "Primera estrella " << totalScore << std::endl;
+    std::cout << "First Star " << totalScore << std::endl;
     return 0;
   }
 
@@ -134,7 +134,7 @@ class DayOfTodayAoC{
 
       });
 
-    std::cout << "Segunda estrella " <<totalScore<< std::endl;
+    std::cout << "Second Star " <<totalScore<< std::endl;
     return 0;
   }
 

@@ -25,7 +25,7 @@ class DayOfTodayAoC{
 
   int computeFirstStar() {
 
-    std::cout << "Primera estrella" << std::endl;
+    std::cout << "First Star" << std::endl;
 
     unsigned int diference3 = 0;
     unsigned int diference1 = 0;
@@ -75,7 +75,7 @@ class DayOfTodayAoC{
     std::vector<unsigned long long> cheatSheat(jolts.size());
     unsigned long long sol = getTotalDistinction(0, jolts, cheatSheat);
 
-    std::cout << "Segunda estrella  "<<sol << std::endl;
+    std::cout << "Second Star  "<<sol << std::endl;
     return 0;
   }
 

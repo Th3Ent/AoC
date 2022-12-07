@@ -52,7 +52,7 @@ public:
     }
 
 
-    std::cout << "Primera estrella  " <<" Min Fuel Needed: "<<minFuel<<std::endl;
+    std::cout << "First star  " <<" Min Fuel Needed: "<<minFuel<<std::endl;
     return 0;
   }
 
@@ -89,7 +89,7 @@ public:
       }
     }
 
-    std::cout << "Segunda estrella  Min Fuel:   " <<minFuel<< std::endl;
+    std::cout << "Second star  Min Fuel:   " <<minFuel<< std::endl;
     return 0;
   }
 

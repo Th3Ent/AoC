@@ -82,7 +82,7 @@ public:
 
       }
     }
-    std::cout << "Primera estrella  "<< numOfFish << std::endl;
+    std::cout << "First star  "<< numOfFish << std::endl;
     return 0;
   }
 
@@ -90,7 +90,7 @@ public:
   int computeSecondStar() {
 
 
-    std::cout << "Segunda estrella  "  << std::endl;
+    std::cout << "Second star  "  << std::endl;
     return 0;
   }
 
